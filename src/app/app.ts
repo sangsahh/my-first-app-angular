@@ -4,8 +4,13 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.html',
   standalone: false,
-  styleUrl: './app.css'
+  // styleUrl: './app.css'
+  styles: [`
+    h3{
+      color: dodgerblue;
+    }
+    `]
 })
 export class App {
-  protected title = 'my-first-app';
+  protected name = 'kim';
 }
