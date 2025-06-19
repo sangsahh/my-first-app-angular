@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
@@ -8,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class App {
   protected title = 'my-first-app';
+  username = '';
+
+  resetUsername() {
+    this.username = '';
+  }
+
+
 }
