@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class App {
   protected title = 'my-first-app';
+  loadedFeature = 'recipe';
+
+  onNavigate(feature: string){
+    this.loadedFeature = feature;
+
+  }
 }
