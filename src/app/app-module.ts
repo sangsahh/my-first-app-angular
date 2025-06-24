@@ -9,6 +9,7 @@ import { RecipeDetail } from './reipes/recipe-detail/recipe-detail';
 import { ShoppingList } from './shopping-list/shopping-list';
 import { ShoppingListEdit } from './shopping-list/shopping-list-edit/shopping-list-edit';
 import { Reipes } from './reipes/reipes';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { Reipes } from './reipes/reipes';
     RecipeList,
     RecipeItem,
     RecipeDetail,
-    Reipes
+    Reipes,
+    DropdownDirective
   ],
   imports: [
     BrowserModule
