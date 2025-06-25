@@ -12,6 +12,10 @@ import { Reipes } from './reipes/reipes';
 import { DropdownDirective } from './shared/dropdown.directive';
 
 import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { RecipeStart } from './reipes/recipe-start/recipe-start';
+import { RecipeEdit } from './reipes/recipe-edit/recipe-edit';
 
 
 @NgModule({
@@ -24,10 +28,14 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
     RecipeItem,
     RecipeDetail,
     Reipes,
-    DropdownDirective
+    DropdownDirective,
+    RecipeStart,
+    RecipeEdit
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
